@@ -107,11 +107,11 @@
 
         base {
             bindings = <
-&kp ESC    &kp N1               &kp N2           &kp N3               &kp N4                  &kp N5                                                 &kp N6  &kp N7                      &kp N8                &kp N9             &kp N0              &kp MINUS
-&kp ESC    &kp Q                &kp W            &kp E                &kp R                   &longPress GRAVE T                                     &kp Y   &kp U                       &kp I                 &kp O              &kp P               &kp LBKT
-&kp TAB    &HML LS(LEFT_GUI) A  &HML LEFT_ALT S  &HML LEFT_CONTROL D  &HMShiftL LEFT_SHIFT F  &kp G                                                  &kp H   &HMShiftR RIGHT_SHIFT J     &HMR RIGHT_CONTROL K  &HMR RIGHT_ALT L   &HMR LEFT_WIN SEMI  &kp SQT
-&kp LSHFT  &kp Z                &kp X            &longPress LC(C) C   &longPress LG(V) V      &kp B               &kp LS(LCTRL)    &kp C_PLAY_PAUSE  &kp N   &longPress RIGHT_BRACKET M  &kp COMMA             &kp DOT            &kp FSLH            &kp RSHFT
-                                &kp LGUI         &kp BACKSPACE        &kp LCTRL               &mo 1               &kp SPACE        &kp ENTER         &mo 2   &kp RIGHT_ALT               &kp LEFT_BRACKET      &kp RIGHT_BRACKET
+&kp ESC    &kp N1  &kp N2    &kp N3              &kp N4              &kp N5                                                 &kp N6  &kp N7                      &kp N8            &kp N9             &kp N0    &kp MINUS
+&kp ESC    &kp Q   &kp W     &kp E               &kp R               &longPress GRAVE T                                     &kp Y   &kp U                       &kp I             &kp O              &kp P     &kp LBKT
+&kp TAB    &kp A   &kp S     &kp D               &kp F               &kp G                                                  &kp H   &kp J                       &kp K             &kp L              &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X     &longPress LC(C) C  &longPress LG(V) V  &kp B               &kp LS(LCTRL)    &kp C_PLAY_PAUSE  &kp N   &longPress RIGHT_BRACKET M  &kp COMMA         &kp DOT            &kp FSLH  &kp RSHFT
+                   &kp LGUI  &kp BACKSPACE       &kp LCTRL           &mo 1               &kp SPACE        &kp ENTER         &mo 2   &kp RIGHT_ALT               &kp LEFT_BRACKET  &kp RIGHT_BRACKET
             >;
 
             display-name = "Base";
@@ -154,7 +154,7 @@
 &trans       &trans  &trans  &trans  &trans  &trans                      &trans        &trans        &trans            &trans        &trans        &studio_unlock
 &trans       &trans  &trans  &trans  &trans  &trans                      &out OUT_BLE  &kp C_VOL_DN  &kp C_MUTE        &kp C_VOL_UP  &trans        &trans
 &trans       &trans  &trans  &trans  &trans  &trans  &kurs     &my_base  &out OUT_USB  &kp C_PREV    &kp C_PLAY_PAUSE  &kp C_NEXT    &trans        &kp INS
-                     &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans        &trans            &tog 4
+                     &trans  &trans  &trans  &trans  &trans    &trans    &trans        &trans        &trans            &to 4
             >;
 
             display-name = "Adjust";
@@ -167,7 +167,7 @@
 &kp ESC    &kp Q   &kp W     &kp E          &kp R      &kp T                                      &kp Y   &kp U          &kp I             &kp O    &kp P     &kp BSLH
 &kp TAB    &kp A   &kp S     &kp D          &kp F      &kp G                                      &kp H   &kp J          &kp K             &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X     &kp C          &kp V      &kp B   &kp LS(LCTRL)    &kp C_PLAY_PAUSE  &kp N   &kp M          &kp COMMA         &kp DOT  &kp FSLH  &kp RSHFT
-                   &kp LGUI  &kp BACKSPACE  &kp LCTRL  &mo 1   &kp SPACE        &kp ENTER         &mo 2   &kp RIGHT_ALT  &kp LEFT_BRACKET  &tog 4
+                   &kp LGUI  &kp BACKSPACE  &kp LCTRL  &mo 1   &kp SPACE        &kp ENTER         &mo 2   &kp RIGHT_ALT  &kp LEFT_BRACKET  &to 0
             >;
 
             sensor-bindings =
