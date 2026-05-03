@@ -107,6 +107,13 @@
             bindings = <&kp LS(S) &kp H &kp A &kp L &kp L &kp N5 &kp N6 &kp N0 &kp N0 &kp MINUS &kp L &kp O &kp S &kp S &kp N3 &kp N2>;
             label = "IN_KURS";
         };
+
+        numbers_key: numbers_key {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp N5 &kp N5 &kp N5 &kp N9 &kp N6 &kp N2 &kp N0 &kp RET>;
+            label = "NUMBERS_KEY";
+        };
     };
 
     combos {
