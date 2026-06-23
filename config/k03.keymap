@@ -159,7 +159,7 @@
 &kp ESC    &kp Q          &kp W          &kp E               &kp R               &longPress GRAVE T                                             &kp Y          &kp U                       &kp I          &kp O          &kp P          &kp LBKT
 &kp TAB    &kp A          &kp S          &kp D               &kp F               &kp G                                                          &kp H          &kp J                       &kp K          &kp L          &kp SEMI       &kp SQT
 &kp LSHFT  &kp Z          &kp X          &longPress LC(C) C  &longPress LG(V) V  &kp B               &kp LS(BACKSPACE)    &kp LS(LEFT_CONTROL)  &kp N          &longPress RIGHT_BRACKET M  &kp COMMA      &kp DOT        &kp FSLH       &kp RSHFT
-                          &kp LGUI       &none               &kp LCTRL           &mo 1               &kp SPACE            &kp ENTER             &mo 2          &kp RIGHT_ALT               &none          &none
+                          &kp LGUI       &none               &kp LCTRL           &mo 1               &kp SPACE            &kp ENTER             &mo 2          &kp RIGHT_ALT               &none          &kp RA(SLASH)
             >;
 
             display-name = "Base";
@@ -211,11 +211,11 @@
         game {
             display-name = "Base";
             bindings = <
-&kp ESC    &kp N1  &kp N2    &kp N3         &kp N4     &kp N5                                     &kp N6  &kp N7         &kp N8            &kp N9   &kp N0    &kp MINUS
-&kp ESC    &kp Q   &kp W     &kp E          &kp R      &kp T                                      &kp Y   &kp U          &kp I             &kp O    &kp P     &kp BSLH
-&kp TAB    &kp A   &kp S     &kp D          &kp F      &kp G                                      &kp H   &kp J          &kp K             &kp L    &kp SEMI  &kp SQT
-&kp LSHFT  &kp Z   &kp X     &kp C          &kp V      &kp B   &kp LS(LCTRL)    &kp C_PLAY_PAUSE  &kp N   &kp M          &kp COMMA         &kp DOT  &kp FSLH  &kp RSHFT
-                   &kp LGUI  &kp BACKSPACE  &kp LCTRL  &mo 1   &kp SPACE        &kp ENTER         &mo 2   &kp RIGHT_ALT  &kp LEFT_BRACKET  &to 0
+&kp ESC    &kp N1  &kp N2    &kp N3  &kp N4     &kp N5                                     &kp N6  &kp N7         &kp N8     &kp N9   &kp N0    &kp BACKSPACE
+&kp ESC    &kp Q   &kp W     &kp E   &kp R      &kp T                                      &kp Y   &kp U          &kp I      &kp O    &kp P     &kp LEFT_BRACKET
+&kp TAB    &kp A   &kp S     &kp D   &kp F      &kp G                                      &kp H   &kp J          &kp K      &kp L    &kp SEMI  &kp SQT
+&kp LSHFT  &kp Z   &kp X     &kp C   &kp V      &kp B   &kp LS(LCTRL)    &kp C_PLAY_PAUSE  &kp N   &kp M          &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                   &kp LGUI  &trans  &kp LCTRL  &mo 5   &kp SPACE        &kp ENTER         &mo 2   &kp RIGHT_ALT  &trans     &to 0
             >;
 
             sensor-bindings =
@@ -225,6 +225,16 @@
                 <&scrl_rot>,
                 <&enc_vol>,
                 <&scrl_rot>;
+        };
+
+        Game_mo1 {
+            bindings = <
+&trans  &trans    &trans    &trans     &trans  &trans                     &trans  &trans  &trans  &trans   &trans  &trans
+&trans  &trans    &kp UP    &trans     &trans  &trans                     &trans  &kp N7  &kp N8  &kp N9   &trans  &trans
+&trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans                     &trans  &kp N4  &kp N5  &kp N6   &trans  &trans
+&trans  &trans    &trans    &trans     &trans  &kp DEL  &trans    &trans  &trans  &kp N1  &kp N2  &kp N3   &trans  &trans
+                  &trans    &trans     &trans  &trans   &trans    &trans  &trans  &trans  &kp N0  &kp DOT
+            >;
         };
     };
 };
